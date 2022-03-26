@@ -1,9 +1,17 @@
-import { View, Text, Image, useWindowDimensions } from "react-native";
+import {
+  View,
+  Text,
+  Image,
+  useWindowDimensions,
+  Pressable,
+} from "react-native";
 import React from "react";
 import { Feather } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 const HomeHeader = (props) => {
   const { width } = useWindowDimensions();
+  const navigation = useNavigation();
   return (
     <View
       style={{
@@ -39,12 +47,14 @@ const HomeHeader = (props) => {
         style={{ marginHorizontal: 10 }}
       />
 
-      <Feather
-        name="edit-2"
-        size={24}
-        color="black"
-        style={{ marginHorizontal: 20 }}
-      />
+      <Pressable onPress={() => navigation.navigate("UsersScreen")}>
+        <Feather
+          name="edit-2"
+          size={24}
+          color="black"
+          style={{ marginHorizontal: 20 }}
+        />
+      </Pressable>
     </View>
   );
 };

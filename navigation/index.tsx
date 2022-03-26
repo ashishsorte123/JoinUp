@@ -20,6 +20,7 @@ import ChatRoomScreen from "../screens/ChatRoomScreen";
 import HomeScreen from "../screens/HomeScreen";
 import HomeHeader from "./HomeHeader";
 import ChatRoomHeader from "./ChatRoomHeader";
+import UsersScreen from "../screens/UsersScreen";
 
 export default function Navigation({
   colorScheme,
@@ -56,6 +57,13 @@ function RootNavigator() {
         options={{
           headerTitle: ChatRoomHeader,
           headerBackTitle: "false",
+        }}
+      />
+      <Stack.Screen
+        name="UsersScreen"
+        component={UsersScreen}
+        options={{
+          title: "Users",
         }}
       />
       <Stack.Screen

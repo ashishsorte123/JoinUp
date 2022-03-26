@@ -19,6 +19,7 @@ declare global {
 export type RootStackParamList = {
   ChatRoom: NavigatorScreenParams<RootTabParamList> | undefined;
   Home: undefined;
+  UsersScreen: undefined;
   Modal: undefined;
   NotFound: undefined;
 };
