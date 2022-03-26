@@ -7,6 +7,7 @@ import Navigation from "./navigation";
 import Amplify, { Auth } from "aws-amplify";
 import config from "./src/aws-exports";
 import { withAuthenticator } from "aws-amplify-react-native";
+import { LogBox } from "react-native";
 
 Amplify.configure({
   ...config,
@@ -14,6 +15,8 @@ Amplify.configure({
     disabled: true,
   },
 });
+
+LogBox.ignoreAllLogs();
 
 function App() {
   const isLoadingComplete = useCachedResources();
