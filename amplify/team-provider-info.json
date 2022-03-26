@@ -9,11 +9,18 @@
       "UnauthRoleName": "amplify-joinup-staging-165450-unauthRole",
       "StackName": "amplify-joinup-staging-165450",
       "StackId": "arn:aws:cloudformation:us-east-1:495215112334:stack/amplify-joinup-staging-165450/f4d019f0-aac9-11ec-a3e5-0a54d2946cc7",
-      "AmplifyAppId": "d12dabh4umsy0"
+      "AmplifyAppId": "d12dabh4umsy0",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-joinup-staging-165450-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
     },
     "categories": {
       "auth": {
         "JoinUp": {}
+      },
+      "function": {
+        "JoinUpPostConfirmation": {
+          "deploymentBucketName": "amplify-joinup-staging-165450-deployment",
+          "s3Key": "amplify-builds/JoinUpPostConfirmation-4a71653778436669665a-build.zip"
+        }
       }
     }
   }
