@@ -41,7 +41,7 @@ const ChatRoomHeader = ({ id, children }) => {
         source={{
           uri: user?.imageUri,
         }}
-        style={{ width: 30, height: 30, borderRadius: 25 }}
+        style={{ width: 30, height: 30, borderRadius: 15 }}
       />
       <Text
         style={{
