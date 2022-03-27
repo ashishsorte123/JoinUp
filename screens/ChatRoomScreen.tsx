@@ -69,8 +69,6 @@ export default function ChatRoomScreen() {
     setMessages(fetchedMessages);
   };
 
-  navigation.setOptions({ title: "Elon Musk" });
-
   if (!chatRoom) {
     return <ActivityIndicator />;
   }
