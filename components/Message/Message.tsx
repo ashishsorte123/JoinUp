@@ -43,7 +43,7 @@ const Message = ({ message }) => {
       ]}
     >
       {message.image && (
-        <View style={{ marginBottom: message.content ? 10 : 0 }}>
+        <View style={{ marginBottom: message.content ? 10 : 10 }}>
           <S3Image
             imgKey={message.image}
             style={{ width: width * 0.7, aspectRatio: 4 / 3 }}

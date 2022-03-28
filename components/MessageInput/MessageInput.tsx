@@ -84,8 +84,6 @@ const MessageInput = ({ chatRoom }) => {
     setIsEmojiPickerOpen(false);
     setImage(null);
     setProgress(0);
-    // setSoundURI(null);
-    // removeMessageReplyTo();
   };
 
   // Image Picker
@@ -117,7 +115,8 @@ const MessageInput = ({ chatRoom }) => {
   };
 
   const progressCallback = (progress) => {
-    setProgress(progress.loaded / progress.total);
+    console.log(`Uploaded: ${progress.loaded}/${progress.total}`);
+    setProgress(progress.loaded / progress.loaded);
   };
 
   const sendImage = async () => {
@@ -139,7 +138,6 @@ const MessageInput = ({ chatRoom }) => {
         chatroomID: chatRoom.id,
       })
     );
-
     updateLastMessage(newMessage);
     resetFields();
   };
@@ -173,8 +171,8 @@ const MessageInput = ({ chatRoom }) => {
               style={{
                 height: 10,
                 backgroundColor: "#3777f0",
-                borderRadius: 5,
                 width: `${progress * 100}%`,
+                borderRadius: 10,
               }}
             />
           </View>
