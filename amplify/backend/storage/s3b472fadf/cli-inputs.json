@@ -1,0 +1,13 @@
+{
+  "resourceName": "s3b472fadf",
+  "policyUUID": "b472fadf",
+  "bucketName": "joinup0d9936f59ccb451393ca475501d15ee8",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
